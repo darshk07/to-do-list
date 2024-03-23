@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react'
 
-type Props = {}
-
 const ListItem = ({ item, deleteItem }: any) => {
     return (
         <div className="list-item">
@@ -39,7 +37,7 @@ const InputItem = ({ handleSubmit }: any) => {
     )
 }
 
-export default function Home({ }: Props) {
+export default function Home() {
     const [data, setData] = useState<any>([]);
     const [isEntering, setIsEntering] = useState<boolean>(true);
 

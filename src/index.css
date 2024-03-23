@@ -3,18 +3,36 @@
 @tailwind utilities;
 
 .active {
-    @apply bg-tertiary;
+  @apply bg-tertiary;
 }
 
 *::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 
 *::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #e0e0e0;
-    border-radius: 10px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
+
+*,
+html {
+  transition: background 0.3s ease-in;
+}
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(17%);
+  }
+}
+
+.wavy {
+  scale: 1.5;
+  animation: moveLeftToRight 8s linear infinite alternate; /* Adjust duration and timing function as needed */
 }
