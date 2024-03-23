@@ -200,7 +200,7 @@ const Home = () => {
   }, [data, isEditing, newTask]);
 
   return (
-    <div className="dark:text-white relative col-span-full col-start-3 grid grid-rows-8 w-full h-[100dvh] pr-6 pb-6">
+    <div className="dark:text-white relative col-span-full col-start-1 pl-6 md:pl-0 md:col-start-3 grid grid-rows-8 w-full h-[100dvh] pr-6 pb-6">
       <Header />
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
         <img id="wavyBG" src={wavy} alt="" className="z-0 scale-150 wavy" />

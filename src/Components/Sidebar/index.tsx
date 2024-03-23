@@ -6,7 +6,7 @@ import { LuCalendarDays } from "react-icons/lu";
 
 const Sidebar = () => {
   return (
-    <div className="col-span-2 transition-all ease-in h-full flex flex-col p-2 gap-10">
+    <div className="hidden md:flex col-span-2 transition-all ease-in h-full flex-col p-2 gap-10">
       <div className="text-xl self-center flex justify-center mt-2 items-center">
         <div className="text-center w-[40px] aspect-square rounded-md mr-2 bg-white"></div>
         <div className="dark:text-white">To-do</div>
